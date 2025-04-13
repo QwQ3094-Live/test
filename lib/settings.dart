@@ -122,7 +122,7 @@ class PreferenceTitle extends StatelessWidget {
       padding: EdgeInsets.all(15),
       child: Text(
         text,
-        style: TextStyle(color: Theme.of(context).colorScheme.onPrimary),
+        style: TextStyle(color: Theme.of(context).colorScheme.primary),
       )
     );
   }
