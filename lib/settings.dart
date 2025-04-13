@@ -82,7 +82,7 @@ class _SettingScreenState extends State<SettingScreen> {
           PreferenceTitle(text: '通用'),
           
           SliderPreference(
-            iconData: Icons.round,
+            iconData: Icons.rounded_corner,
             title: '圆角大小',
             slider: Slider(
               value: _round,
@@ -90,7 +90,7 @@ class _SettingScreenState extends State<SettingScreen> {
               label: _round.toString(),
               onChanged: (double value) => _changeRound(value),
             ),
-          )
+          ),
           
           EditTextPreference(
             iconData: Icons.date_range,
