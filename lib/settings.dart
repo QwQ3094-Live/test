@@ -81,6 +81,17 @@ class _SettingScreenState extends State<SettingScreen> {
           
           PreferenceTitle(text: '通用'),
           
+          SliderPreference(
+            iconData: Icons.round,
+            title: '圆角大小',
+            slider: Slider(
+              value: _round,
+              max: 24,
+              label: _round.toString(),
+              onChanged: (double value) => _changeRound(value),
+            ),
+          )
+          
           EditTextPreference(
             iconData: Icons.date_range,
             title: '日期输入',
@@ -90,14 +101,6 @@ class _SettingScreenState extends State<SettingScreen> {
             dialogCancel: '取消',
             dialogSure: '确定',
             onConfirm: (String date) => _inputDate(date),
-          ),
-
-          Slider(
-            year2023: false,
-            value: _round,
-            max: 24,
-            label: _round.toString(),
-            onChanged: (double value) => _changeRound(value),
           ),
         ],
       ),
@@ -119,7 +122,7 @@ class PreferenceTitle extends StatelessWidget {
       padding: EdgeInsets.all(15),
       child: Text(
         text,
-        style: TextStyle(color: Theme.of(context).primaryColor),
+        //style: TextStyle(color: Theme.of(context).primaryColor),
       )
     );
   }

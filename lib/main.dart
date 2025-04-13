@@ -36,10 +36,12 @@ class App extends StatelessWidget {
           theme: ThemeData(
             colorScheme: lightColorScheme,
             useMaterial3: true,
+            sliderTheme: const SliderThemeData(year2023: false),
           ),
           darkTheme: ThemeData(
             colorScheme: darkColorScheme,
             useMaterial3: true,
+            sliderTheme: const SliderThemeData(year2023: false),
           ),
           themeMode: ThemeMode.system,
           home: const Main(title: 'Flutter Demo'),
