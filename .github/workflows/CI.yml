@@ -9,7 +9,6 @@ on:
       - '**.md'
       - '**.txt'
       - '.github/**'
-      - '.idea/**'
       - '!.github/workflows/CI.yml'
 
 jobs:
